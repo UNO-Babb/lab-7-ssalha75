@@ -6,14 +6,14 @@ from NumberTests import isPrime
 def main():
     number = 10001
     prime_count = 0
-    candidate = 1
+    factor = 1
     
     while prime_count < number:
-        candidate += 1
-        if isPrime(candidate):
+        factor += 1
+        if isPrime(factor):
             prime_count += 1
     
-    print(candidate)
+    print(factor)
 
 if __name__ == '__main__':
   main()
